@@ -1,12 +1,12 @@
 import Navbar from "./components/Navbar";
-import Post from "./pages/Post";
+import Login from "./pages/Login";
 import "./App.css";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Post />
+      <Login />
     </div>
   );
 }
