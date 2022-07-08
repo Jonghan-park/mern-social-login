@@ -21,7 +21,7 @@ function Login() {
             <img src={Google} alt="google" className="icon" />
             Google
           </div>
-          <div className="loginButton facebook" onClick={facebook}>
+          <div className="loginButton facebook">
             <img src={Facebook} alt="facebook" className="icon" />
             Facebook
           </div>
