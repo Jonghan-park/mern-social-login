@@ -4,20 +4,28 @@ import Facebook from "../assets/facebook.png";
 import Github from "../assets/github.png";
 
 function Login() {
+  const google = () => {
+    window.open("http://localhost:5000/auth/google", "_self");
+  };
+
+  const github = () => {
+    window.open("http://localhost:5000/auth/github", "_self");
+  };
+
   return (
     <div className="login">
       <h1 className="loginTitle">Choose a Login Method</h1>
       <div className="wrapper">
         <div className="left">
-          <div className="loginButton google">
+          <div className="loginButton google" onClick={google}>
             <img src={Google} alt="google" className="icon" />
             Google
           </div>
-          <div className="loginButton facebook">
+          <div className="loginButton facebook" onClick={facebook}>
             <img src={Facebook} alt="facebook" className="icon" />
             Facebook
           </div>
-          <div className="loginButton github">
+          <div className="loginButton github" onClick={github}>
             <img src={Github} alt="github" className="icon" />
             Github
           </div>
