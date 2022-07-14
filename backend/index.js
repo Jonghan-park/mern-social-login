@@ -20,9 +20,10 @@ app.use(
     credentials: true,
   })
 );
+app.get("/", (req, res) => res.send("Hello from Express!"));
 
 app.use("/auth", authRoute);
 
-app.listen("5000", () => {
+app.listen("3000", () => {
   console.log("Server is running");
 });
